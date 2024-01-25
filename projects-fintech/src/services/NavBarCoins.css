@@ -1,0 +1,36 @@
+nav {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+}
+
+time {
+    font-size:1.5rem;
+    text-transform:uppercase;
+    justify-content:center;
+}
+
+.classNav ul {
+    max-width:25rem;
+    padding:0;
+    margin:0;
+}
+
+.classNav ul li {
+    font-size:1.5rem;
+    text-transform:uppercase;
+}
+
+.classNav ul {
+    display:flex;
+    flex-direction:row;
+    list-style:none;
+    justify-content:space-around;
+    width:100%;
+}
+time sup {
+    text-transform:lowercase;
+    font-size:0.875rem;
+    font-weight:normal;
+}

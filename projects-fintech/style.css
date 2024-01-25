@@ -1,0 +1,118 @@
+/*:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  background:green;
+}*/
+* {
+    padding:0;
+    margin:0;
+}
+
+html { background-color: #f9f7f1; }
+
+body {
+    font-family: 'PT Serif', serif;
+    color: #404040;
+    padding: 0 24px;
+    max-width: 1200px;
+    max-height:100%;
+    margin: 0 auto;
+    padding:0;
+}
+
+h1 {
+    font:700 4rem/1 'Oswald', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin:0;
+}
+
+h2 {
+    font: 2.5rem/.95 'Oswald', sans-serif;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    text-align:center;
+}
+
+p {
+    text-align:left;
+    hyphens:auto;
+    font-size:1.8rem;
+    padding:1rem 0;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.container {
+    display:grid;
+    min-height:70vh;
+    grid-template-columns: repeat(4,1fr);
+    /*grid-template-rows: repeat(4,1fr);*/
+    grid-template-areas:
+    'header header header header'
+    'nav nav nav nav'
+    'main main main main'
+    'footer footer footer footer'
+}
+
+header {
+    grid-area: header;
+    height:4rem;
+    padding-bottom:0.5rem;
+
+    display: flex;
+    justify-content: center; /* Esto centrará el contenido horizontalmente */
+    align-items: center; /* Esto centrará el contenido verticalmente si el header tiene altura */
+}
+
+
+nav {
+    grid-area: nav;
+    border-top: 3px solid #333333;
+    border-bottom: 3px solid #333333;
+    padding: 12px 0;
+}
+
+main {
+    grid-area: main;
+    /*display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);*/
+}
+
+footer {
+    grid-area: footer;
+    border-top: 3px solid #333333;
+    border-bottom: 3px solid #333333;
+    padding: 12px 0;
+    font-size:2rem;
+}
+
